@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Murmuration — boids flocking</title>
+  <meta name="description" content="An interactive boids flocking simulation: separation, alignment, and cohesion in real time." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐦</text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="stage"></canvas>
+
+  <header class="hud">
+    <h1>Murmuration</h1>
+    <p class="tag">Three rules, one flock.</p>
+  </header>
+
+  <aside class="panel" id="panel">
+    <button class="collapse" id="collapse" title="Hide panel">‹</button>
+
+    <section>
+      <label>Boids <span data-out="count">240</span></label>
+      <input type="range" id="count" min="20" max="600" step="10" value="240" />
+    </section>
+
+    <section>
+      <h2>Forces</h2>
+      <label>Separation <span data-out="sep">1.6</span></label>
+      <input type="range" id="sep" min="0" max="3" step="0.05" value="1.6" />
+      <label>Alignment <span data-out="ali">1.0</span></label>
+      <input type="range" id="ali" min="0" max="3" step="0.05" value="1.0" />
+      <label>Cohesion <span data-out="coh">0.9</span></label>
+      <input type="range" id="coh" min="0" max="3" step="0.05" value="0.9" />
+    </section>
+
+    <section>
+      <h2>Motion</h2>
+      <label>Vision radius <span data-out="vis">60</span></label>
+      <input type="range" id="vis" min="20" max="140" step="2" value="60" />
+      <label>Max speed <span data-out="spd">3.4</span></label>
+      <input type="range" id="spd" min="1" max="7" step="0.1" value="3.4" />
+    </section>
+
+    <section class="toggles">
+      <label class="chk"><input type="checkbox" id="trails" checked /> Motion trails</label>
+      <label class="chk"><input type="checkbox" id="predator" /> Cursor predator</label>
+    </section>
+
+    <p class="hint">Move the cursor over the flock. Toggle <em>predator</em> to scatter them.</p>
+  </aside>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
