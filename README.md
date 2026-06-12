@@ -4,6 +4,8 @@ An interactive **boids flocking** simulation that runs entirely in the browser. 
 
 **▶ Live:** https://andreaisabelmontana.github.io/murmuration/
 
+> **Not an original idea.** This recreates the concept of an existing project — I didn't invent it. I rebuilt it from scratch, my own way, out of curiosity about how it actually works (and tried to make it a little better along the way).
+
 ## The three rules
 
 Each boid steers using only what it can see within its vision radius:
