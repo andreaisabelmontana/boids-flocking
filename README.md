@@ -1,8 +1,8 @@
-# Murmuration
+# Boids Flocking
 
 An interactive **boids flocking** simulation that runs entirely in the browser. Hundreds of agents self-organise into flowing, starling-like murmurations from just three local steering rules — no central control.
 
-**▶ Live:** https://andreaisabelmontana.github.io/murmuration/
+**▶ Live:** https://andreaisabelmontana.github.io/boids-flocking/
 
 > **Not an original idea.** This recreates the concept of an existing project — I didn't invent it. I rebuilt it from scratch, my own way, out of curiosity about how it actually works (and tried to make it a little better along the way).
 
