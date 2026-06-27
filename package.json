@@ -1,0 +1,10 @@
+{
+  "name": "boids-flocking",
+  "version": "1.0.0",
+  "description": "Interactive boids flocking simulation — separation, alignment, cohesion in the browser.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test"
+  }
+}
